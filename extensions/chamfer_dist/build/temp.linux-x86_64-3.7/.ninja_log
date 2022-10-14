@@ -1,0 +1,8 @@
+# ninja log v5
+0	25781	1664718751048229782	/home/moranyanuka/deep-learning-project/extensions/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer_cuda.o	280b83108f7da283
+3	44686	1664718769960211441	/home/moranyanuka/deep-learning-project/extensions/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer.o	8ebed83f18acbfaa
+172	24055	1664781301906583253	/home/moranyanuka/deep-learning-project/extensions/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer_cuda.o	280b83108f7da283
+53	30932	1664794648008302164	/home/moranyanuka/deep-learning-project/extensions/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer_cuda.o	280b83108f7da283
+53	55866	1664794672948286590	/home/moranyanuka/deep-learning-project/extensions/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer.o	6ad4438c13e4f30b
+1	23603	1664796408375208372	/home/moranyanuka/deep-learning-project/extensions/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer_cuda.o	280b83108f7da283
+2	47344	1664796432119193698	/home/moranyanuka/deep-learning-project/extensions/chamfer_dist/build/temp.linux-x86_64-3.7/chamfer.o	8ebed83f18acbfaa
