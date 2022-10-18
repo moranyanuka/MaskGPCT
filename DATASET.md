@@ -1,6 +1,6 @@
 ## Dataset
 
-The overall directory structure should be(taken from [Point-BERT](https://github.com/lulutang0608/Point-BERT)):
+The overall directory structure should be (taken from [Point-BERT](https://github.com/lulutang0608/Point-BERT)):
 
 ```
 │Point-BERT/
