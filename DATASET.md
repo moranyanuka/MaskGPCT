@@ -22,21 +22,6 @@ The overall directory structure should be(taken from [Point-BERT](https://github
 │  ├── modelnet40_test_8192pts_fps.dat
 ```
 
-**ModelNet Few-shot Dataset:** We follow the previous work to split the original ModelNet40 into pairs of support set and query set. The split used in our experiments is public in [[Google Drive]](https://drive.google.com/drive/folders/1gqvidcQsvdxP_3MdUr424Vkyjb_gt7TW?usp=sharing)/[[Tsinghua Cloud]](https://cloud.tsinghua.edu.cn/d/d4aac5b8f02749e3bdaa/)/[[BaiDuYun]](https://pan.baidu.com/s/1s-Dn1s8cYpeaFVpd1jslzg)(code:bjbq). Download the split file and put it into `data/ModelNetFewshot`, then the structure should be:
-
-```
-│ModelNetFewshot/
-├──5way10shot/
-│  ├── 0.pkl
-│  ├── ...
-│  ├── 9.pkl
-├──5way20shot/
-│  ├── ...
-├──10way10shot/
-│  ├── ...
-├──10way20shot/
-│  ├── ...
-```
 
 **ShapeNet55/34 Dataset:** You can download the processed ShapeNet55/34 dataset at [[BaiduCloud](https://pan.baidu.com/s/16Q-GsEXEHkXRhmcSZTY86A)] (code:le04) or [[Google Drive](https://drive.google.com/file/d/1jUB5yD7DP97-EqqU2A9mmr61JpNwZBVK/view?usp=sharing)]. Unzip the file under `ShapeNet55-34/`. The directory structure should be
 
