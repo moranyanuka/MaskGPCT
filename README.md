@@ -81,7 +81,7 @@ bash scripts/generate.sh <GPU_IDS>\
 ```
 For completion, change completion to True at the file "cfgs/Mixup_models/generator.yaml". The number of decoding iteration can also be set there.
 
-### Dataset
+### Datasets
 
 We use **ShapeNet** for training MaskGPCT model and ModelNet for completion tasks.
 
