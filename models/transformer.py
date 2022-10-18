@@ -1,4 +1,3 @@
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 """
 Slightly adapted version of DETR Transformer class.
 Copy-paste from torch.nn.Transformer with modifications:
