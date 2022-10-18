@@ -60,7 +60,7 @@ bash scripts/train_MaskGPCT.sh <NUM_GPU> <port> \
     --exp_name <name>
     [--val_freq 10]
 ```
-when the tensorboard will be loaded with a sample of the model generation every val_freq epochs.
+The tensorboard will be loaded with a sample of the model generation every val_freq epochs.
 
 For resuming training stopped by accident:
 ```
@@ -79,17 +79,17 @@ bash scripts/generate.sh <GPU_IDS>\
     --ckpts <ckpts path> \
     --exp_name <name>
 ```
-For completion, change completion to True at the file "cfgs/Mixup_models/generator.yaml". The number of decoding iteration can also be set there
+For completion, change completion to True at the file "cfgs/Mixup_models/generator.yaml". The number of decoding iteration can also be set there.
 
 ### Dataset
 
-We use **ShapeNet** for the MaskGPCT model.
+We use **ShapeNet** for training MaskGPCT model and ModelNet for completion tasks.
 
 The details of used datasets can be found in [DATASET.md](./DATASET.md).
 
 
 ### Visualization
-Some visualizations of generation of the model trained on the chair category. All generations are conditioned on the same single coordinate and token, and inferenced in 10 iteration steps.
+Some visualizations of generation of the model trained on the chair category in **ShapeNET**. All generations are conditioned on the same single coordinate and token, and inferenced in 10 iteration steps.
 
 From left to right: ground truth cloud, ground truth centers, sampled center used as an input, predicted ceneters, predicted cloud 
 
