@@ -102,11 +102,11 @@ Some of the code in this repo is borrowed from [Point-BERT](https://github.com/l
 
 ## TODO
 - [X] Provide visual results of point-cloud conditioned generation task
+- [X] Provide unconditional generation
 - [X] Add matching known tokens function for completion tasks 
-- [ ] Take care of the case of generation multiple clouds at a single decoding procedure
-- [ ] Add unconditional generation
-- [ ] Test distributed training (currently not tested and might not work)
-- [ ] Try image conditioned generation
+- [ ] Take care of the case of generating multiple point clouds at a single decoding procedure
+- [ ] Test distributed training
+- [ ] Add image conditioned generation
 
 
 Created by [Moran Yanuka](https://github.com/moranyanuka)
