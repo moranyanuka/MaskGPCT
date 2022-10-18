@@ -1,0 +1,62 @@
+optimizer : {
+  type: AdamW,
+  kwargs: {
+  lr : 0.001, 
+  weight_decay : 0.05
+  #weight_decay : 0.
+}}
+
+scheduler: {
+  type: CosLR,
+  kwargs: {
+    epochs: 300,
+    initial_epochs : 3
+}}
+
+dataset : {
+  train : { _base_: cfgs/dataset_configs/ShapeNet-55.yaml, 
+            others: {subset: 'train', npoints: 1024, whole: True}},
+  val : { _base_: cfgs/dataset_configs/ModelNet40.yaml, 
+            others: {subset: 'test'}},
+  extra_train : { _base_: cfgs/dataset_configs/ModelNet40.yaml, 
+            others: {subset: 'train'}}}
+model : {
+  NAME: MaskGPCT, 
+  
+  transformer_config: {
+    trans_dim: 256, 
+    num_center : 64,
+    hidden_mlp_dim : 16,
+    encoder_depth: 6, 
+    decoder_depth: 6, 
+    dropout : 0.1,
+    #dropout : 0.,
+    mlp_ratio : 4,
+    num_heads: 8, 
+    choice_temperature : 4,
+    clip_max_norm : 0.1, 
+    #dvae_loss: True, 
+    return_all_tokens: False, 
+    normalize_before : True,
+    aux_loss : False,
+    # TODO: need to delete once generator is splited from MaskGPCT
+    set_cost_token : 0.,
+    set_cost_center : 1.,
+  },
+  dvae_config : {
+    group_size: 32, 
+    num_group: 64, 
+    encoder_dims: 256,
+    num_tokens: 8192,
+    tokens_dims: 256, 
+    decoder_dims: 256, 
+    ckpt: './pretrained_models/dVAE.pth' # set dVAE weights here
+  }}
+#total_bs : 128
+total_bs : 1 # 73 earphones
+step_per_update : 1
+max_epoch : 300
+set_cost_token : 0.
+set_cost_center : 1.
+center_loss_coef : 20
+eos_coef : 0.1 # currently not used
