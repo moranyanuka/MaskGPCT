@@ -1,7 +1,7 @@
 # MaskGPCT: Masked Generative Point-Cloud Transformer
 
 ## Summary
-MaskGPCT is a new paradigm for point clouds generation using bi-directional transformer. The new paradigm brings the parallel decoding power of bidirectional transformers to point cloud generation and editing. At inference time, the model is able to generate a point-cloud in a constant amount of iterations.
+MaskGPCT is a new paradigm for point clouds generation and editing. The new paradigm utilize the parallel decoding power of bidirectional transformers such that at inference time, the model is able to generate or edit a point-cloud in a constant amount of iterations.
 
 ![intro](fig/Architecture_new.png)
 
